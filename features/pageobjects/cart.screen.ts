@@ -21,6 +21,10 @@ class CartScreen extends Screen {
     }
     return products;
   }
+
+  public async checkoutCart() {
+    await $("~test-CHECKOUT").click();
+  }
 }
 
 export default new CartScreen();
